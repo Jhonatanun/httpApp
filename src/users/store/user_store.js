@@ -1,4 +1,4 @@
-
+import { loadUsersByPage } from '../use_cases/loadUsersByPage.js';
 
 const state = {
     currentPage: 0,
@@ -7,7 +7,7 @@ const state = {
 
 const loadNextPage = async() => {
 
-    loadUsersByPage( state.currentPage +4);
+    loadUsersByPage( state.currentPage +1);
 }
 
 const loadPreviusPage =()=>{
